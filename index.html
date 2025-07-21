@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arsyl Fauzan - Software Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue": "#1e3a8a",
+              "secondary-blue": "#3b82f6",
+              "light-gray": "#f8fafc",
+              "dark-gray": "#64748b",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-light-gray text-gray-800">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-all duration-300"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-primary-blue">Arsyl Fauzan</div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-gray-700 hover:text-primary-blue transition-colors duration-300"
+              >Home</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-gray-700 hover:text-primary-blue transition-colors duration-300"
+              >Projects</a
+            >
+            <a
+              href="#skills"
+              class="nav-link text-gray-700 hover:text-primary-blue transition-colors duration-300"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-700 hover:text-primary-blue transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-gray-700" id="mobile-menu-btn">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+          <a
+            href="#home"
+            class="block py-2 text-gray-700 hover:text-primary-blue transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="#projects"
+            class="block py-2 text-gray-700 hover:text-primary-blue transition-colors duration-300"
+            >Projects</a
+          >
+          <a
+            href="#skills"
+            class="block py-2 text-gray-700 hover:text-primary-blue transition-colors duration-300"
+            >Skills</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-gray-700 hover:text-primary-blue transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center pt-20"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <div class="fade-in-up">
+          <div
+            class="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://via.placeholder.com/300x300/1e3a8a/ffffff?text=AF"
+              alt="Arsyl Fauzan"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold text-primary-blue mb-4">
+            Arsyl Fauzan
+          </h1>
+          <h2 class="text-2xl md:text-3xl text-dark-gray mb-8">
+            Software Engineer
+          </h2>
+          <p
+            class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+          >
+            Seorang Software Engineer yang passionate dalam mengembangkan solusi
+            teknologi inovatif. Dengan pengalaman dalam full-stack development,
+            saya berfokus pada pembuatan aplikasi web yang efisien, scalable,
+            dan user-friendly. Saya selalu antusias untuk belajar teknologi baru
+            dan berkontribusi dalam proyek-proyek yang memberikan dampak
+            positif.
+          </p>
+          <div class="mt-8">
+            <a
+              href="#projects"
+              class="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors duration-300 inline-block"
+            >
+              Lihat Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-4xl font-bold text-primary-blue mb-4">Projects</h2>
+          <p class="text-gray-600 text-lg">
+            Beberapa project yang telah saya kerjakan
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="project-card bg-light-gray rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/400x250/3b82f6/ffffff?text=E-Commerce"
+              alt="E-Commerce Platform"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary-blue mb-2">
+                E-Commerce FashionArchive
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Platform e-commerce lengkap dengan sistem pembayaran, manajemen
+                produk, dan dashboard admin.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="text-secondary-blue hover:text-primary-blue transition-colors duration-300"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="project-card bg-light-gray rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/400x250/f59e0b/ffffff?text=Inventory+Mobile"
+              alt="Inventory Management Mobile"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary-blue mb-2">
+                Inventory Management Mobile
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Aplikasi mobile untuk manajemen inventori dengan barcode
+                scanner, real-time tracking, dan notifikasi stok.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/Indokq/sisfo-sarprasmobile"
+                  class="text-secondary-blue hover:text-primary-blue transition-colors duration-300"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="project-card bg-light-gray rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/400x250/10b981/ffffff?text=Inventory+System"
+              alt="Inventory Management System"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary-blue mb-2">
+                Inventory Management System
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Sistem manajemen inventori web dengan dashboard analytics,
+                laporan otomatis, dan integrasi supplier.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/Indokq/sisfo-sarpras/tree/master"
+                  class="text-secondary-blue hover:text-primary-blue transition-colors duration-300"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+               
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="project-card bg-light-gray rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Portfolio"
+              alt="Portfolio Website"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary-blue mb-2">
+                Portfolio Website
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Website portfolio responsif dengan animasi smooth, dark mode,
+                dan optimasi performa tinggi.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href=""
+                  class="text-secondary-blue hover:text-primary-blue transition-colors duration-300"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-light-gray">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-4xl font-bold text-primary-blue mb-4">Skills</h2>
+          <p class="text-gray-600 text-lg">
+            Tools dan teknologi yang saya kuasai
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Frontend -->
+          <div class="skill-category bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-blue mb-4">Frontend</h3>
+            <div class="space-y-3">
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">React</div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-blue mb-4">Backend</h3>
+            <div class="space-y-3">
+              <div class="skill-item">Express.js</div>
+              <div class="skill-item">PHP</div>
+              <div class="skill-item">Laravel</div>
+              <div class="skill-item">Luau</div>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-category bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-blue mb-4">Database</h3>
+            <div class="space-y-3">
+              <div class="skill-item">MySQL</div>
+              <div class="skill-item">MongoDB</div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-blue mb-4">Tools</h3>
+            <div class="space-y-3">
+              <div class="skill-item">Git</div>
+              <div class="skill-item">VS Code</div>
+              <div class="skill-item">Postman</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-4xl font-bold text-primary-blue mb-4">Contact</h2>
+          <p class="text-gray-600 text-lg">
+            Mari berkolaborasi dalam proyek yang menarik
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div class="fade-in-up">
+            <form class="space-y-6" id="contact-form">
+              <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-blue focus:border-transparent transition-all duration-300"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-blue focus:border-transparent transition-all duration-300"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Pesan</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-blue focus:border-transparent transition-all duration-300"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary-blue text-white py-3 rounded-lg hover:bg-blue-800 transition-colors duration-300"
+              >
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="fade-in-up">
+            <div class="space-y-8">
+              <div>
+                <h3 class="text-xl font-bold text-primary-blue mb-4">
+                  Hubungi Saya
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Saya selalu terbuka untuk diskusi tentang peluang kerja,
+                  kolaborasi proyek, atau sekadar berbagi ide tentang teknologi.
+                </p>
+              </div>
+
+              <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-envelope text-secondary-blue"></i>
+                  <span class="text-gray-700">arsylfauzan19@email.com</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-phone text-secondary-blue"></i>
+                  <span class="text-gray-700">+62 858-1759-2559</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-map-marker-alt text-secondary-blue"></i>
+                  <span class="text-gray-700">Depok, Indonesia</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-semibold text-primary-blue mb-4">
+                  Social Media
+                </h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="social-link text-2xl text-gray-600 hover:text-secondary-blue transition-colors duration-300"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-link text-2xl text-gray-600 hover:text-secondary-blue transition-colors duration-300"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-link text-2xl text-gray-600 hover:text-secondary-blue transition-colors duration-300"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-link text-2xl text-gray-600 hover:text-secondary-blue transition-colors duration-300"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-blue text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 Arsyl Fauzan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
